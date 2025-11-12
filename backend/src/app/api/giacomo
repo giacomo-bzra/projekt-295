@@ -1,0 +1,10 @@
+export async function GET() {
+  
+  const data = {
+    name_nachname: "Giacomo Dimitri",
+    geburtstag: "07-04-2009",
+    hobbies: ["Coding", "Musik", "_"],
+    experiences: [
+      { title: "IMST", year: "2024" },
+    ]}
+  };
