@@ -6,14 +6,34 @@
     <title>Document</title>
     <link href="./user.css">  
 </head>
+<script>
+    //mit diesem code nimmt es die informationen vom giacomo api und gibt die id value dingsbumbs ist gleich wie im imput box
+     const response = await fetch("/api/giacomo");
+     const data = await response.json();
+
+     document.getElementById("fullname").value = data.name_nachname;
+     document.getElementById("alter").value = data.geburtstag;
+     document.getElementById("hobbies").value = data.hobbies;
+     document.getElementById("experience1").value = data.experience1;
+     document.getElementById("experience2").value = data.experience2;
+</script>
 <body>
     <header></header>
     <main>
 
        <label for="fullname">Name und Nachname:</label><br />
-        <input id="fullname" name="fullname"  required readonly/>
-       <form action="textbox" name="alter" id="alter">alter i guess</form>
-       <form action="textbox" name="experience" id="experience">lowkey üsi experience als krassi lüüt</form>
+       <input id="fullname" name="fullname"  required readonly/>
+
+       <label for="alter">alter:</label><br />
+       <input id="alter" name="alter"  required readonly/>
+       
+       <label for="hobbies">hobbies:</label><br />
+       <input id="hobbies" name="hobbies"  required readonly/>
+
+       <label for="experience1">experience:</label><br />
+       <input id="experience1" name="experience1"  required readonly/>
+       <input id="experience2" name="experience2"  required readonly/>
+       
 
 
     </main>
