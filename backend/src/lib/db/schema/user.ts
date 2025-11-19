@@ -11,6 +11,16 @@ export const User = z.object({
   passwordHash: z.string(),
 })
 
+
+const giacomo = {
+  email: "giacomo.dimitri@gmail.com",
+  passwordHash: "1234"
+}
+
+const sami = {
+  email: "sami.Boudatt@gmail.com",
+  passwordHash: "4321"
+}
 // Model Type
 export declare type UserModel = z.infer<typeof User>
 
