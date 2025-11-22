@@ -1,4 +1,4 @@
-import { login } from "../users-api";
+import { login } from "./users-api";
 
 async function submitLoginForm(e: Event) {
     e.preventDefault();

@@ -1,4 +1,4 @@
-import { register } from "../users-api";
+import { register } from "../src/users-api";
 
 async function submitRegisterForm(e: Event) {
     e.preventDefault();
